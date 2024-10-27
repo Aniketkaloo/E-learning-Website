@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Subject Lectures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #000000;
+            padding: 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        .notes-section {
+            padding: 2rem;
+            text-align: center;
+            background: #f8f9fa;
+            margin-top: 20px;
+        }
+
+        .notes-item {
+            margin: 20px 0; /* Space between items */
+            padding: 10px; /* Padding for the item */
+            border: 1px solid #ccc; /* Border for the item */
+            border-radius: 5px; /* Rounded corners */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Space between name and button */
+            align-items: center; /* Center items vertically */
+            background: #ffffff; /* Background color */
+        }
+
+        .notes-link {
+            color: #3498db; /* Link color */
+            text-decoration: none; /* No underline */
+            font-size: 1.1rem; /* Font size */
+        }
+
+        .notes-link:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+
+        .download-button {
+            padding: 10px 20px; /* Button padding */
+            background: #3498db; /* Button background color */
+            color: #fff; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 1rem; /* Font size */
+            transition: background 0.3s; /* Smooth transition */
+        }
+
+        .download-button:hover {
+            background: #2980b9; /* Darker shade on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">E-learning</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Course</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="notes-section">
+        <h2>Lecture Notes</h2>
+        <p>Click the buttons below to download the lecture notes:</p>
+        <div class="notes-item">
+            <span class="notes-link">C Notes</span>
+            <a class="download-button" href="https://www.vssut.ac.in/lecture_notes/lecture1424354156.pdf" target="_blank">Download</a>
+        </div>
+        <div class="notes-item">
+            <span class="notes-link">C++ Notes</span>
+            <a class="download-button" href="https://documents.uow.edu.au/~akheng/WORKSHOP/C++%20Course%20Notes.pdf" target="_blank">Download</a>
+        </div>
+        <div class="notes-item">
+            <span class="notes-link">Java Notes</span>
+            <a class="download-button" href="https://mrcet.com/downloads/digital_notes/IT/JAVA%20PROGRAMMING.pdf" target="_blank">Download</a>
+        </div>
+        <div class="notes-item">
+            <span class="notes-link">Python Notes</span>
+            <a class="download-button" href="https://mrcet.com/downloads/digital_notes/CSE/III%20Year/PYTHON%20PROGRAMMING%20NOTES.pdf" target="_blank">Download</a>
+        </div>
+        <div class="notes-item">
+            <span class="notes-link">OOPS Notes</span>
+            <a class="download-button" href="https://mrcet.com/downloads/digital_notes/HS/OOP_10122018.pdf" target="_blank">Download</a>
+        </div>
+        <div class="notes-item">
+            <span class="notes-link">DSA Notes</span>
+            <a class="download-button" href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf" target="_blank">Download</a>
+        </div>
+        <div class="notes-item">
+            <span class="notes-link">Operating System</span>
+            <a class="download-button" href="https://mrcet.com/downloads/digital_notes/CSE/II%20Year/OPERATING%20SYSTEMS%20%20NOTES%20R18.pdf" target="_blank">Download</a>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer style="background: #000000; color: white; padding: 20px 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <p style="text-align: center; margin: 0;">© 2024 E-learning. All Rights Reserved.</p>
+            <div class="social-icons" style="display: flex;">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

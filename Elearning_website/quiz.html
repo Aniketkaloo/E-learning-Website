@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>AI Quizzes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #333;
+        }
+
+        nav {
+            background: #000000;
+            padding: 1rem;
+        }
+
+        .nav-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        .quizzes-section {
+            padding: 2rem;
+            text-align: center;
+            background: #f8f9fa;
+            margin: 20px auto;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .quizzes-section h2 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 2rem;
+        }
+
+        .quizzes-section p {
+            margin-bottom: 30px;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .quizzes-item {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            transition: box-shadow 0.3s;
+        }
+
+        .quizzes-item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .quizzes-link {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .quizzes-link:hover {
+            text-decoration: underline;
+        }
+
+        .download-button {
+            padding: 10px 20px;
+            background: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s, transform 0.3s;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .download-button:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .quizzes-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .download-button {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <span class="logo-text">E-learning</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Course</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="quizzes-section">
+        <h2>Quizzes</h2>
+        <p>Click the buttons below to access the quizzes:</p>
+        <div class="quizzes-item">
+            <span class="quizzes-link">C Quiz</span>
+            <a class="download-button" href="https://www.w3schools.com/c/c_quiz.php" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">C++ Quiz</span>
+            <a class="download-button" href="https://www.w3schools.com/cpp/cpp_quiz.asp" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">Java Quiz</span>
+            <a class="download-button" href="https://www.w3schools.com/java/java_quiz.asp" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">Python Quiz</span>
+            <a class="download-button" href="https://www.w3schools.com/python/python_quiz.asp" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">DSA Quiz</span>
+            <a class="download-button" href="https://www.w3schools.com/dsa/dsa_quiz.php" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">OOPS Quiz</span>
+            <a class="download-button" href="https://www.interviewbit.com/oops-mcq/" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">Computer Network Quiz</span>
+            <a class="download-button" href="https://www.geeksforgeeks.org/quizzes/50-computer-networks-mcqs-with-answers/" target="_blank">Take Quiz</a>
+        </div>
+        <div class="quizzes-item">
+            <span class="quizzes-link">Operating System Quiz</span>
+            <a class="download-button" href="https://www.sanfoundry.com/operating-system-questions-answers/" target="_blank">Take Quiz</a>
+        </div>
+    </div>
+
+ 
+    <!-- Footer Section -->
+    <footer style="background: #000000; color: white; padding: 20px 0;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <p style="text-align: center; margin: 0;">© 2024 E-learning. All Rights Reserved.</p>
+            <div class="social-icons" style="display: flex;">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+
+</html>

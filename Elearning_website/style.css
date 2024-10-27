@@ -1,0 +1,484 @@
+/* Keeping your original navbar styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Your existing navbar styles */
+nav {
+    background: #000000;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+/* Styles for large screens */
+.nav-links {
+    display: flex; /* Show links horizontally */
+  }
+  
+  /* Styles for small screens */
+  @media (max-width: 768px) {  /* Change breakpoint as needed */
+    .nav-links {
+      display: none; /* Hide links initially */
+    }
+  
+    .hamburger.active .nav-links {
+      display: flex; /* Show links on hamburger click */
+    }
+  }
+/* New styles for the landing page */
+.section {
+    padding: 80px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    scroll-margin-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Hero Section */
+#home {
+    background: url('backgorund.jpg') center/cover no-repeat; /* Use only the background image */
+padding: 50px 0; /* Adjust padding as needed */
+color: #ecf0f1; /* Light text color */
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1s ease;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* About Section */
+#about {
+background: #f8f9fa; /* Light background color */
+padding: 60px 20px; /* Add padding for spacing */
+}
+
+.about-grid {
+display: grid;
+grid-template-columns: 1fr 1fr; /* Two-column layout */
+gap: 40px; /* Space between columns */
+align-items: center; /* Center content vertically */
+}
+
+.about-content {
+font-family: 'Arial', sans-serif; /* Font family for better readability */
+line-height: 1.6; /* Increase line height for readability */
+}
+
+.about-content p {
+    font-size: 1.1rem; /* Slightly larger font size for paragraph */
+    margin-bottom: 20px; /* Space below paragraph */
+    color: #34495e; /* Darker text color for contrast */
+    line-height: 1.6; /* Adjust line height for better readability */
+    text-align: justify; /* Ensure text is aligned neatly for uniform layout */
+    max-width: 800px; /* Limit width to maintain layout balance */
+    margin-left: auto; /* Center align the paragraph */
+    margin-right: auto; /* Center align the paragraph */
+}
+
+.about-content ul {
+list-style-type: disc; /* Bullet points for list items */
+padding-left: 20px; /* Indentation for list items */
+}
+
+.about-content li {
+margin-bottom: 10px; /* Space between list items */
+position: relative; /* Positioning for custom bullet */
+}
+
+.about-content li::before {
+content: '✔'; /* Custom bullet character */
+color: #3498db; /* Bullet color */
+position: absolute; /* Positioning for bullet */
+left: -20px; /* Adjust bullet position */
+font-size: 1.2rem; /* Bullet size */
+}
+
+.about-image img {
+width: 100%; /* Full width */
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.about-image img:hover {
+transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.section-title {
+font-size: 2.5rem; /* Large title size */
+margin-bottom: 1.5rem; /* Space below title */
+color: #000000; /* Title color */
+text-align: center; /* Center the title */
+position: relative; /* Positioning for decoration */
+}
+
+.section-title::after {
+content: ''; /* Decorative element */
+display: block; /* Block for spacing */
+width: 50px; /* Width of line */
+height: 4px; /* Height of line */
+background: #3498db; /* Line color */
+margin: 10px auto; /* Center the line */
+}
+
+/* Services Section */
+.section1 {
+padding: 60px 0;
+background-color: #000000; /* Light background for contrast */
+}
+
+.container {
+width: 90%;
+margin: auto;
+}
+
+.section-title1 {
+text-align: center;
+font-size: 2.5em;
+margin-bottom: 30px;
+color: #ffffff; /* Dark color for the title */
+}
+
+.services-grid {
+display: flex;
+justify-content: center;
+gap: 20px; /* Space between cards */
+flex-wrap: wrap; /* Wrap to new line on smaller screens */
+}
+
+.service-card {
+    background-color: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 30px; /* Increased padding for more space inside */
+    text-align: center;
+    width: 280px; /* Fixed width for uniformity */
+    min-height: 350px; /* Set minimum height to make cards taller */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+
+.service-icon {
+font-size: 50px; /* Larger icons */
+margin-bottom: 15px; /* Space below icons */
+}
+
+.service-card h3 {
+font-size: 1.5em;
+color: #007bff; /* Highlighted color for headings */
+}
+
+.service-card p {
+font-size: 1em;
+color: #555; /* Gray color for text */
+}
+
+/* Courses Section */
+#course {
+background: #f8f9fa;
+}
+
+.courses-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+}
+
+.course-card {
+background: white;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+transform: translateY(-10px);
+}
+
+.course-image {
+height: 200px;
+overflow: hidden;
+}
+
+.course-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.course-card:hover .course-image img {
+transform: scale(1.1);
+}
+
+.course-content {
+padding: 20px;
+}
+
+.course-title {
+font-size: 1.3rem;
+margin-bottom: 10px;
+color: #2c3e50;
+}
+
+.course-info {
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
+padding-top: 15px;
+border-top: 1px solid #eee;
+}
+
+
+button {
+background-color: #3498db; /* Primary color */
+color: white; /* Text color */
+border: none; /* No border */
+border-radius: 25px; /* More rounded corners for a modern look */
+padding: 12px 30px; /* Increased padding for better touch target */
+font-size: 1rem; /* Adjusted font size for better readability */
+font-weight: bold; /* Bold text for emphasis */
+cursor: pointer; /* Pointer cursor on hover */
+transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+outline: none; /* Remove default focus outline */
+}
+
+button:hover {
+background-color: #2980b9; /* Darker shade on hover */
+transform: translateY(-2px); /* Slight lift on hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+button:active {
+transform: translateY(1px); /* Slight push down when clicked */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow on click */
+}
+
+button:focus {
+outline: none; /* Ensure no outline on focus */
+box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Soft focus ring */
+}
+
+/* Contact Section */
+/* Contact Section */
+#contact {
+    background: #000000; /* Solid black background */
+    padding: 80px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text to contrast against the black background */
+}
+
+.contact-form {
+    background: #1e1e1e; /* Dark gray background for the form */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4); /* Stronger shadow for more depth */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #444; /* Dark border to match the black theme */
+    border-radius: 8px;
+    font-size: 1.1rem;
+    background-color: #2c2c2c; /* Slightly lighter gray background for input fields */
+    color: white; /* White text inside the input fields */
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-control:focus {
+    border-color: #3498db; /* Highlight color on focus */
+    outline: none;
+    background-color: #333; /* Darker background on focus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.form-control::placeholder {
+    color: #ccc; /* Lighter placeholder text */
+}
+
+/* Button Styling */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Light blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #1abc9c; /* Teal hover effect for button */
+    transform: scale(1.05); /* Slight pop-up effect on hover */
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .btn-submit {
+        font-size: 1.1rem;
+    }
+}
+
+#contact .section-title2 {
+    color: white !important; /* Force the heading color to be white */
+    font-size: 2.5rem; /* Adjust font size for better visibility if needed */
+    text-align: center; /* Optional: Center the heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+
+/* Footer*/
+footer {
+    background: #000000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.social-icons a {
+    color: white; /* Icon color */
+    margin: 0 10px;
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+.social-icons a:hover {
+    color: #3498db; /* Change color on hover */
+}
